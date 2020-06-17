@@ -1,0 +1,14 @@
+<footer class="footer">
+    <div class="container">
+        <div class="alert alert-warning" *ngIf='invalidCredentials'>{{errormessage}}</div>
+        <div class="text-white float-left">
+            Enter your Name: <input type="text" [(ngModel)]="username">
+            <button (click)=handleUsername() class="btn btn-success">Submit</button>
+        </div>
+            <span class="float-right text-white">
+                Contact us : Email @krishna_anbalagan.1993cs@yahoo.com &emsp;
+                Mobile number : +91-8190066051.
+            </span>
+        
+    </div>
+</footer>

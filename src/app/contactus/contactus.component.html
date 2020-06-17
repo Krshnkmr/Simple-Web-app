@@ -1,0 +1,40 @@
+<body>
+    <!-- <span>
+        <img src="assets/Watermill-Desktop-Images.jpg" alt="My background image">
+    </span>  -->
+    <!-- <div class="top-left">Top Left</div> -->
+    <div class="container">
+        <div>
+            <!-- <form [formGroup]="registrationform"> -->
+                <div class="alert alert-warning" *ngIf="invalidLogin">{{errormessage}}</div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Firstname" [(ngModel)]="firstname" id="name" required minlength="4">
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="form-group">
+                    <!-- <div class="alert alert-warning" *ngIf="invalidLogin">{{LastnameError}}</div> -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Lastname" [(ngModel)]="lastname" required minlength="4">
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="form-group">
+                    <!-- <div class="alert alert-warning" *ngIf="invalidLogin">{{EmailError}}</div> -->
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Email" [(ngModel)]="email" required minlength="6">
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <button (click)=handleSubmit() class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+            <!-- </form> -->
+        </div>
+    </div>
+
+</body>

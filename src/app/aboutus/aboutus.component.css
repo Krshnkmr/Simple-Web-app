@@ -1,0 +1,14 @@
+body
+{
+    font-family: 'B612', sans-serif;
+    background-color: rgba(44, 231, 216, 0.678);
+}
+table
+{
+    border-radius: 10;
+    border-color: red;
+}
+tr:hover 
+{
+    background-color: rgb(223, 219, 219);
+}
